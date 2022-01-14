@@ -1,5 +1,6 @@
 ## Test Suite
-Location: ./test_sample.py or ./testsPurpose:  Package integration and unit tests.
+`Location`: ./test_sample.py or ./tests  
+`Purpose`:  Package integration and unit tests.  
 
 Starting out, a small test suite will often exist in a single file:
 
@@ -20,7 +21,9 @@ each instance of the codebase.
 
 To give the individual tests import context, create a tests/context.py file:
 
-    import osimport syssys.path.insert(0, os.path.abspath('..'))
+    import os
+    import syssys.path.insert(0, os.path.abspath('..'))
+    
     import sample
 
 Then, within the individual test modules, import the module like so:
